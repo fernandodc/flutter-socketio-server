@@ -22,7 +22,13 @@
     socket.on('disconnect',function(){
         console.log('desconectado del servidor!!!')
     })
-    socket.emit('mensaje',{'user':'ferdc','pass':1234})
+   
+    socket.on('active-bands',function(data){
+        console.table(data);
+    })
+  
+
+   
     
     </script>
 
